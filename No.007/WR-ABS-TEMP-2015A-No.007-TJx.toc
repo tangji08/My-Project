@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}\H Work}{3}
+\contentsline {section}{\numberline {2}\H A real example in the book}{3}
+\contentsline {subsection}{\numberline {2.1}\H Translate File to Matrix}{3}
+\contentsline {subsubsection}{\numberline {2.1.1}Introduction}{3}
+\contentsline {subsubsection}{\numberline {2.1.2}Code}{3}
+\contentsline {subsection}{\numberline {2.2}\H Plot the picture}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}Picture}{4}
+\contentsline {subsubsection}{\numberline {2.2.2}Code}{4}
+\contentsline {subsection}{\numberline {2.3}\H Normalizing numeric values}{5}
+\contentsline {subsubsection}{\numberline {2.3.1}Introduction}{5}
+\contentsline {subsubsection}{\numberline {2.3.2}Code}{5}
+\contentsline {subsection}{\numberline {2.4}\H Set up the predictor}{5}
+\contentsline {subsubsection}{\numberline {2.4.1}Code}{5}
+\contentsline {subsection}{\numberline {2.5}\H Result}{6}
+\contentsline {section}{\numberline {3}\H 外汇与汇率}{8}
+\contentsline {subsection}{\numberline {3.1}\H 外汇、汇率的概念}{8}
+\contentsline {subsubsection}{\numberline {3.1.1}外汇}{8}
+\contentsline {subsubsection}{\numberline {3.1.2}汇率}{8}
+\contentsline {subsection}{\numberline {3.2}\H 汇率的决定及其变动}{8}
+\contentsline {subsubsection}{\numberline {3.2.1}汇率的决定的基础}{8}
+\contentsline {subsubsection}{\numberline {3.2.2}影响汇率变动的因素}{9}
+\contentsline {paragraph}{\H 经济增长率}{9}
+\contentsline {paragraph}{\H 国际收支状况}{9}
+\contentsline {paragraph}{\H 通货膨胀}{9}
+\contentsline {paragraph}{\H 利率水平}{10}

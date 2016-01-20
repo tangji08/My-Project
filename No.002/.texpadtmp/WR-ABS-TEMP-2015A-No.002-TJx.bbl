@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{class1}
+Andrew Ng.
+\newblock An application of supervised learning - autonomous deriving.
+\newblock https://see.stanford.edu/Course/CS229/54.
+
+\bibitem{class2}
+Andrew Ng.
+\newblock The concept of unsupervised learning, k-means clustering algorithm,
+  k-means algorithm.
+\newblock https://see.stanford.edu/Course/CS229/43.
+
+\end{thebibliography}

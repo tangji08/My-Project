@@ -1,0 +1,466 @@
+%!TEX TS-program = xelatex  
+%!TEX encoding = UTF-8 Unicode  
+  
+  
+\documentclass[a4paper,12pt,oneside]{book}
+\usepackage{fancyhdr} 
+\usepackage{layout}
+\addtolength{\hoffset}{-1.0cm} \addtolength{\textwidth}{2cm}
+\addtolength{\voffset}{-1.0cm} \addtolength{\textheight}{2cm}
+\usepackage[rgb]{xcolor}
+
+\usepackage{cite}
+\makeatletter
+\def\@cite#1#2{\textsuperscript{[{#1\if@tempswa , #2\fi}]}}
+\makeatother
+
+\usepackage{listings}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{bcol}{rgb}{0.85,0.85,0.85}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{mygray}{gray}{.9}
+\definecolor{mypink}{rgb}{.99,.91,.95}
+\definecolor{mycyan}{cmyk}{.3,0,0,0}
+
+\lstset{ %
+language=Matlab,                % the language of the code
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                % will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+backgroundcolor=\color{bcol},   % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=shadowbox,                % adds a frame around the code
+rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+tabsize=2,                      % sets default tabsize to 2 spaces
+captionpos=t,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+title=\lstname,                     % show the filename of files included with \lstinputlisting;
+                                    % also try caption instead of title
+keywordstyle=\color{blue},          % keyword style
+commentstyle=\color{dkgreen},       % comment style
+stringstyle=\color{mauve},          % string literal style
+escapeinside=``,                    % if you want to add LaTeX within your code
+morekeywords={LONG64,LONGLONG,bool}                % if you want to add more keywords to the set
+}
+
+
+
+\usepackage{flushend, cuted} %
+
+\usepackage{indentfirst,latexsym,bm}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{pifont} 
+\usepackage{fontspec,xltxtra,xunicode}  
+\defaultfontfeatures{Mapping=tex-text}  
+
+\usepackage{algorithmic}
+\usepackage[noend, ruled, linesnumbered]{algorithm2e}
+\setromanfont{华文宋体} %设置中文字体  
+\XeTeXlinebreaklocale “zh”  
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt %文章内中文自动换行  
+  
+ \setlength{\columnsep}{3em}          %设置分栏间隔
+\setlength{\parindent}{2em}          %设置段首缩进量
+\renewcommand{\baselinestretch}{1.2} %重设行距     
+ \usepackage{graphicx}
+\usepackage{cite}
+\newcommand{\red}[1]{  \textcolor{red}  {#1}}   %红色\makeatletter
+\newcommand{\blue}[1]{ \textcolor{blue} {#1}}   %蓝色\def\@cite#1#2{\textsuperscript{[{#1\if@tempswa , #2\fi}]}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}   %绿色\makeatother
+
+
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+
+%%--------------------------------------------------
+%% 图片文件路径
+%%--------------------------------------------------
+\graphicspath{{Figures/}}
+
+
+% MATH -----------------------------------------------------------
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\vecm}{vec}
+\DeclareMathOperator{\vecs}{vecs}
+
+\newcommand{\mfloor}[1]{ \left\lfloor {#1} \right\rfloor }
+\newcommand{\mpair}[2]{ \left\langle {#1}, {#2} \right\rangle}
+
+
+\renewcommand{\bf}[1]{\mathbf{#1}}
+\renewcommand{\vec}[1]{\bm{#1}}    %向量， 黑斜体
+\newcommand{\mat}[1]{\bm{#1}}    %矩阵
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\me} {\mathrm{e}}
+\newcommand{\mi} {\mathrm{i}}
+\newcommand{\vei} {\mathrm{vec}}
+
+\newcommand{\vecmat}[1]{\vecm{\left( #1 \right)}}
+\newcommand{\vecsmat}[1]{\vecs{\left( #1 \right)}}
+\newcommand{\vecasym}[1]{[#1]_\times}   % antisymmetric matrix from a vector
+\newcommand{\id} {\mathbbm{1}}   % identity operator
+\newcommand{\fracode}[2]{\frac{\dif {#1}}{\dif {#2}}}         % ordinary differential operator
+\newcommand{\fracpde}[2]{\frac{\partial {#1}}{\partial {#2}}} % partial differential operator
+\newcommand{\fracpderow}[2]{\partial {#1}/\partial {#2}}
+\newcommand{\fracoderow}[2]{\dif {#1}/\dif {#2}}
+\newcommand{\fracpdemix}[3]{\frac{\partial^2 {#1}}{\partial {#2} \partial {#3}}}
+\newcommand{\lap}[2]{\frac{\partial^2 {#1}}{\partial {#2}^2}}
+\newcommand{\laprow}[2]{\partial^2 {#1}/\partial {#2}^2}
+\newcommand{\secode}[2]{\frac{\dif^2 {#1}}{\dif {#2}^2}}
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\absvec}[1]{\left| \bf{#1} \right|}
+\newcommand{\ket}[1]{|#1 \rangle}
+\newcommand{\bra}[1]{\langle #1 |}
+\newcommand{\braket}[2]{ \langle #1 | #2 \rangle}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+\newcommand{\normF}[1]{{\parallel #1 \parallel}_\textrm{F}}
+\newcommand{\trsp}[1]{{#1}^\textsf{T}}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\ginv}[1]{#1^+}    % Moore-Penrose (general) inverse
+\newcommand{\tinv}[1]{{#1}^{-\textsf{T}}}
+
+
+\newcommand{\ES}[3]{\mathbb{#1}^{{#2}\times {#3}}}               % Euclidean space
+\newcommand{\PS}[3]{\mathbb{#1}^{{#2}\times{#3}}}      % projective space
+% ----------------------------------------------------------------
+\newfontfamily{\H}{华文黑体}  
+\newfontfamily{\E}{Arial}  
+
+
+\newfontfamily{\TNR}{Times New Roman}  %设定新的字体快捷命令  
+\title{{\H The Data Collection For Machine Learning}\quad {ABS-TEMP-2015A-No.002-TJx}}
+\author{汤吉(Ji TANG)\\
+               ID: ABS-TEMP-2015A,  E-mail: tangji08@hotmail.com \\
+        Date: 2015.11.16}
+        \date{November 16, 2015}
+
+  
+ %%*************************************************
+%%  打印 标题, 作者, 日期等内容
+%%*************************************************
+\begin{document}  
+\maketitle
+%%*********************************************
+%% 设置页眉与页脚
+%%*********************************************
+\pagestyle{fancy}
+\fancyhead[LO,RE]{\leftmark} % clear all fields
+\fancyhead[RO,LE]{ABS-TEMP-2015A-No.002-TJx}   %  请设置正确的个人文档编号
+
+
+
+\fancyfoot[LO,RE]{SIAE}
+\fancyfoot[RO,LE]{中欧航空工程师学院}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+%%*************************************************
+%% 显示内容目录
+%%*************************************************
+\tableofcontents 
+\newpage
+%%*************************************************
+%% 正文部分
+%%*************************************************
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\chapter{\E Machine Learning}
+
+
+\section{\H Journals}
+\begin{enumerate}
+\item Journal of Machine Learning Research, IF = $3.420$
+\\\qquad \red{http://www.jmlr.org}
+\item Machine Learning, IF = $1.467$
+\\\qquad \red{http://www.springer.com/computer/ai/journal/10994}
+\item IEEE Transactions on Knowledge and Data Engineering, IF = $2.067$
+\\\qquad \red{http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69}
+\item Neural Computation, IF = $2.207$
+\\\qquad \red{http://www.mitpressjournals.org/loi/neco}
+\item Journal of Artificial Intelligence Research, IF = $1.257$
+\\\qquad \red{http://www.jair.org}
+\item Artificial Intelligence, IF = $3.371$
+\\\qquad \red{http://www.journals.elsevier.com/artificial-intelligence/}
+\item IEEE Transactions on Pattern Analysis and Machine Intelligence, IF = $5.781$
+\\\qquad \red{http://www.computer.org/web/tpami/index}
+\item Pattern Recognition, IF = $3.096$
+\\\qquad \red{http://www.journals.elsevier.com/pattern-recognition/}
+\item Neural Networks, IF = $2.708$
+\\\qquad \red{http://www.journals.elsevier.com/neural-networks}
+\end{enumerate}
+
+\section{\H Person}
+There are some important professors or person whom we may encounter frequently when doing researches.
+
+\begin{enumerate}
+\item Edoardo M. Airoldi, Harvard University, USA\\
+\quad\red{http://www.people.fas.harvard.edu/\~airoldi/}\\
+
+\item Peter Auer, University of Leoben, Austria\\
+\quad\red{http://portal.uni-freiburg.de/sdd/personen/auer/index.html/startseite}\\
+
+\item Francis Bach, INRIA, France\\
+\quad\red{http://www.di.ens.fr/~fbach/}\\
+
+\item Andrew Bagnell, Carnegie Mellon University, USA\\
+\quad\red{http://www.ri.cmu.edu/person.html?person\_id=689}\\
+
+\item David Barber, University College London, UK\\
+\quad\red{http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.HomePage}\\
+
+\item Mikhail Belkin, Ohio State University, USA\\
+\quad\red{http://soscholar.net/author?author\_id=42e8023a-8f4e-4ed8-908b-2bacea0034b4}\\
+
+\item Yoshua Bengio, Université de Montréal, Canada\\
+\quad\red{http://www.iro.umontreal.ca/~bengioy/yoshua\_en/}\\
+
+\item Samy Bengio, Google Research, USA\\
+\quad\red{http://bengio.abracadoudou.com}\\
+
+\item Jeff Bilmes, University of Washington, USA\\
+\quad\red{http://melodi.ee.washington.edu/~bilmes/pgs/index.html}\\
+
+\item Karsten Borgwardt, MPI For Intelligent systems, Germany\\
+\quad\red{https://www.bsse.ethz.ch/mlcb?page=employee\&employee=Karsten}\\
+
+\item Lawrence Carin, Duke University, USA\\
+\quad\red{http://people.ee.duke.edu/~lcarin/}\\
+
+\item Zhihua Zhang, Shanghai Jiao Tong University, China\\
+\quad\red{http://bcmi.sjtu.edu.cn/~zhzhang/}\\
+\end{enumerate}
+
+
+
+
+\section{\H Directions}
+\begin{enumerate}
+	\item Improving classification accuracy by learning ensembles of classifiers.
+	\item Methods for scaling up supervised learning algorithms.
+	\item Reinforcement learning.
+	\item Learning complex stochastic models.
+\end{enumerate}
+
+ 
+\section{\H Open Source Software}
+\begin{enumerate}
+\item Shark
+\item A Library for Locally Weighted Projection Regression
+\item LIBLINEAR: A Library for Large Linear Classification
+\item JNCC2: The Java Implementation Of Naive Credal Classifier 2
+\item Python Environment for Bayesian Learning: Inferring the Structure of Bayesian Networks from Knowledge and Data
+\item Nieme: Large-Scale Energy-Based Models
+\item Java-ML: A Machine Learning Library
+\item Model Monitor: Evaluating, Comparing, and Monitoring Models
+\item Dlib-ml: A Machine Learning Toolkit
+\item RL-Glue: Language-Independent Software for Reinforcement-Learning Experiments
+\item DL-Learner: Learning Concepts in Description Logics
+\item Error-Correcting Output Codes Library
+\item PyBrain
+\item Continuous Time Bayesian Network Reasoning and Learning Engine
+\item SFO: A Toolbox for Submodular Function Optimization
+\item MOA: Massive Online Analysis
+\item FastInf: An Efficient Approximate Inference Library
+\item The SHOGUN Machine Learning Toolbox
+\item A Surrogate Modeling and Adaptive Sampling Toolbox for Computer Based Design
+\item Model-based Boosting 2.0
+\item libDAI: A Free and Open Source C++ Library for Discrete Approximate Inference in Graphical Models
+\item Gaussian Processes for Machine Learning (GPML) Toolbox
+\item CARP: Software for Fishing Out Good Clustering Algorithms
+\item The arules R-Package Ecosystem: Analyzing Interesting Patterns from Large Transaction Data Sets
+\item MSVMpack: A Multi-Class Support Vector Machine Package
+\item Waffles: A Machine Learning Toolkit
+\item MULAN: A Java Library for Multi-Label Learning
+\item LPmade: Link Prediction Made Easy
+\item Scikit-learn: Machine Learning in Python
+\item The Stationary Subspace Analysis Toolbox
+\item MULTIBOOST: A Multi-purpose Boosting Package
+\item ML-Flex: A Flexible Toolbox for Performing Classification Analyses In Parallel
+\item GPLP: A Local and Parallel Computation Toolbox for Gaussian Process Regression
+\item NIMFA : A Python Library for Nonnegative Matrix Factorization
+\item The huge Package for High-dimensional Undirected Graph Estimation in R
+\item glm-ie: Generalised Linear Models Inference \& Estimation Toolbox
+\item Jstacs: A Java Framework for Statistical Analysis and Classification of Biological Sequences
+\item Pattern for Python
+\item DEAP: Evolutionary Algorithms Made Easy
+\item A Topic Modeling Toolbox Using Belief Propagation
+\item PREA: Personalized Recommendation Algorithms Toolkit
+\item Oger: Modular Learning Architectures For Large-Scale Sequential Processing
+\item Sally: A Tool for Embedding Strings in Vector Spaces
+\item DARWIN: A Framework for Machine Learning and Computer Vision Research and Development
+\item SVDFeature: A Toolkit for Feature-based Collaborative Filtering
+\item A C++ Template-Based Reinforcement Learning Library: Fitting the Code to the Mathematics
+\item MLPACK: A Scalable C++ Machine Learning Library
+\item GPstuff: Bayesian Modeling with Gaussian Processes
+\item JKernelMachines: A Simple Framework for Kernel Machines
+\item Orange: Data Mining Toolbox in Python
+\item Tapkee: An Efficient Dimension Reduction Library
+\item The CAM Software for Nonnegative Blind Source Separation in R-Java
+\item QuantMiner for Mining Quantitative Association Rules
+\item Divvy: Fast and Intuitive Exploratory Data Analysis
+\item GURLS: A Least Squares Library for Supervised Learning
+\item BudgetedSVM: A Toolbox for Scalable SVM Approximations
+\item EnsembleSVM: A Library for Ensemble Learning Using Support Vector Machines
+\item Information Theoretical Estimators Toolbox
+\item The FASTCLIME Package for Linear Programming and Large-Scale Precision Matrix Estimation in R
+\item LIBOL: A Library for Online Learning Algorithms
+\item Conditional Random Field with High-order Dependencies for Sequence Labeling and Segmentation
+\item Manopt, a Matlab Toolbox for Optimization on Manifolds
+\item pystruct - Learning Structured Prediction in Python
+\item ooDACE Toolbox: A Flexible Object-Oriented Kriging Implementation
+\item The Gesture Recognition Toolkit
+\item SPMF: A Java Open-Source Pattern Mining Library
+\item BayesOpt: A Bayesian Optimization Library for Nonlinear Optimization, Experimental Design and Bandits
+\item SAMOA: Scalable Advanced Massive Online Analysis
+\item The flare Package for High Dimensional Linear Regression and Precision Matrix Estimation in R
+\item Introducing CURRENNT: The Munich Open-Source CUDA RecurREnt Neural Network Toolkit
+\item A Classification Module for Genetic Programming Algorithms in JCLEC
+\item Encog: Library of Interchangeable Machine Learning Models for Java and C\#
+\item RLPy: A Value-Function-Based Reinforcement Learning Framework for Education and Research
+\end{enumerate}
+
+To get more information and download for using, click \red{http://www.jmlr.org/mloss/}
+
+
+
+\section{\H Classic Review}
+\begin{enumerate}
+\item Learning internal representations by error propagation - Rumelhart, Hinton, et al. - 1986 (Show Context)
+\item Support-vector networks - Cortes, Vapnik - 1995
+\item A training algorithm for optimal margin classifiers - Boser, Guyon, et al. - 1992 (Show Context)
+\item Spline Models for Observational Data - Wahba - 1990
+\item Nonlinear component analysis as a kernel eigenvalue problem - Scholkopf, Smola, et al. - 1998
+\item A Probabilistic Theory of Pattern Recognition - Devroye, Györfi, et al. - 1996 (Show Context)
+\item On the uniform convergence of relative frequencies of events to their probabilities. Theory of Probability and its Applications - Vapnik, Chervonenkis - 1971
+\item V.N.: Estimation of Dependences Based on Empirical Data - Vapnik - 1982 (Show Context)
+\item Learnability and the Vapnik-Chervonenkis dimension - Blumer, Ehrenfeucht, et al. - 1989
+\item Regularization theory and neural networks architectures - Girosi, Jones, et al. - 1995
+\item An equivalence between sparse approximation and support vector machines - Girosi - 1997
+\item Scale-sensitive dimensions, uniform convergence, and learnability - ALON, BEN-DAVID, et al. - 1993
+\item Simpli support vector decision rules - Burges - 1996
+\item Generalization performance of support vector machines and other pattern classifiers - Bartlett, Shawe-Taylor - 1999
+\item A Theory of Learning and Generalization - Vidyasagar - 1997
+\item Fat-shattering and the learnability of real-valued functions - Bartlett, Long, et al. - 1996
+\item Y.: Learning process in an asymmetric threshold network. In: Disordered systems and biological organization - Cun - 1986 (Show Context)
+\item A framework for structural risk minimization - Shawe-Taylor, Bartlett, et al. - 1996
+\item The Glivenko-Cantelli problem, ten years later - Talagrand - 1996
+\item sufficient conditions for the uniform convergence of means to their expectations,” Theory Probab - “Necessary - 1981 (Show Context)
+\item the uniform convergence of relative frequencies of events to their probabilities,” Theory Probab - “On - 1971 (Show Context)
+\item On the annealed vc entropy for margin classifiers: A statistical mechanics study - Opper - 1998
+\item invariance in kernel-based methods - “Geometry - 1999
+\item connection between regularization operators and support vector kernels - “The - 1998
+\item necessary and sufficient conditions for consistency of the method of empirical risk minimization,” Yearbook of the Academy of Sciences of the USSR - “The - 1989 (Show Context)
+\item support vector kernels,” in - Williamson, Smola, et al. - 1999
+\end{enumerate}
+
+
+
+\section{\H Conferences}
+\begin{enumerate}
+\item International Conference on Machine Learning
+\\\qquad \red{http://icml.cc/2013/}
+\item International Joint Conference on Artificial Intelligence
+\\\qquad \red{http://www.ijcai.org}
+\item Pacific Rim International Conference on Artificial Intelligence
+\\\quad \red{http://ktw.mimos.my/pricai2012/}
+\item International Conference on Pattern Recognition
+\\\qquad \red{http://www.icpr2014.org}
+\item International Conference on Document Analysis and Recognition
+\\\qquad \red{http://www.icdar2013.org}
+\item International Conference on Automatic Face and Gesture Recognition
+\\\qquad \red{http://fg2013.cse.sc.edu}
+\item International Conference on Artificial Neural Networks
+\\\qquad \red{https://www.waset.org/Conferences}
+\end{enumerate}
+
+
+
+\chapter{\E Big Data}
+Big data is a broad term for data sets so large or complex that traditional data processing applications are inadequate. Challenges include analysis, capture, data curation, search, sharing, storage, transfer, visualization, and information privacy. The term often refers simply to the use of predictive analytics or other certain advanced methods to extract value from data, and seldom to a particular size of data set. Accuracy in big data may lead to more confident decision making. And better decisions can mean greater operational efficiency, cost reduction and reduced risk.
+
+Analysis of data sets can find new correlations, to "spot business trends, prevent diseases, combat crime and so on." Scientists, business executives, practitioners of media, and advertising and governments alike regularly meet difficulties with large data sets in areas including Internet search, finance and business informatics. Scientists encounter limitations in e-Science work, including meteorology, genomics,connectomics, complex physics simulations,and biological and environmental research.\cite{wiki:xxx}
+\section{\H Person}
+\begin{enumerate}
+	\item Wikipedia contributors. Vladimir Vapnik. Wikipedia, The Free Encyclopedia.
+\\\quad \red{https://en.wikipedia.org/w/index.php?title=Vladimir\_Vapnik\&oldid=690001724.} \\
+	\item Wikipedia contributors. Lawrence Rabiner. Wikipedia, The Free Encyclopedia.
+\\\quad \red{https://en.wikipedia.org/w/index.php?title=Lawrence\_Rabiner\&oldid=660725634.}\\
+    \item R. Tyrrell Rockafellar,University of Washington
+\\\quad \red{http://www.math.washington.edu/~rtr/mypage.html}\\
+    \item Sergey Brin,Google Co-founder
+\\\quad \red{http://www.ted.com/speakers/sergey\_brin}\\
+    \item Jitendra Malik,University of California at Berkeley
+\\\quad \red{http://www.cs.berkeley.edu/~malik/}\\
+    \item Jianbo Shi, University of Pennsylvania
+\\\quad \red{http://www.cis.upenn.edu/~jshi/}\\
+    \item Jiawei Han,Abel Bliss Professor, Department of Computer Science 
+\\\quad \red{http://web.engr.illinois.edu/~hanj/}\\
+    \item Henning Schulzrinne,Professor in the Dept. of Computer Science
+\\\quad \red{http://www.cs.columbia.edu/~hgs/}
+
+
+\end{enumerate}
+
+
+
+\section{\H Journals}
+
+
+\section{\H Directions}
+\begin{enumerate}
+	\item Cloud/Grid/Stream Computing for Big Data
+	\item High Performance/Parallel Computing Platforms for Big Data
+	\item Autonomic Computing and Cyber-infrastructure, System Architectures, Design and Deployment
+	\item Energy-efficient Computing for Big Data
+	\item Programming Models and Environments for Cluster, Cloud, and Grid Computing to Support Big Data
+	\item Software Techniques andArchitectures in Cloud/Grid/Stream Computing
+	\item Big Data Open Platforms
+	\item New Programming Models for Big Data beyond Hadoop/MapReduce, STORM
+	\item Software Systems to Support Big Data Computing
+\end{enumerate}
+
+
+\section{\H Open Source Software}
+
+
+\section{\H Classic Review}
+\begin{enumerate}
+\item 2011. “Six Provocations for Big Data - Boyd, Crawford 
+\item Super crunchers, Bantam - Ayres - 2007
+\item Survey sampling - Kish - 1965 (Show Context)
+\item Big data: The next frontier for innovation, competition, and productivity, McKinsey Global Institute - Manyika, Chui - 2011 (Show Context)
+\item Understanding Big Data: Analytics for Enterprise Class Hadoop and Streaming Data - Zikopoulos, Eaton - 2011
+\item Practical text mining and statistical analysis for non-structured text data applications, 1st ed - Miner, Elder, et al. - 2012
+\item Expand your digital horizon with Big Data. Forrester Research - Hopkins, Evelson - 2011 
+\item MapReduce: simplified data processing on large clusters - Dean, Ghemawat - 2008 
+\item k-anonymity: a model for protecting privacy - Sweeney - 2002
+\item White paper, ―Big Data Meets Big Data Analytics - Troester, SAS
+\item Oracle Whitepaper (August, 2012), Oracle Information Architecture: An Architect’s Guide to Big Data - Sun, Heller 
+\item Ebook, ―Strategic Guide to Big Data Analytics - Carr, Jackson - 2012
+\end{enumerate}
+
+
+
+
+\section{\H Conferences}
+
+
+%%****************************************
+%%  参考文献
+%%****************************************
+\bibliography{myreference}
+\bibliographystyle{plain}
+
+\end{document}  

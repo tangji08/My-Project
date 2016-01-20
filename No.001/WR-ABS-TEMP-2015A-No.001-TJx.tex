@@ -1,0 +1,341 @@
+%!TEX TS-program = xelatex  
+%!TEX encoding = UTF-8 Unicode  
+  
+  
+\documentclass[12pt]{article}  
+\usepackage{geometry}  
+\geometry{letterpaper}  
+  
+\usepackage{fancyhdr} 
+\usepackage{layout}
+\addtolength{\hoffset}{-1.0cm} \addtolength{\textwidth}{2cm}
+\addtolength{\voffset}{-1.0cm} \addtolength{\textheight}{2cm}
+\usepackage[rgb]{xcolor}
+
+\usepackage{cite}
+\makeatletter
+\def\@cite#1#2{\textsuperscript{[{#1\if@tempswa , #2\fi}]}}
+\makeatother
+
+\usepackage{listings}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{bcol}{rgb}{0.85,0.85,0.85}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{mygray}{gray}{.9}
+\definecolor{mypink}{rgb}{.99,.91,.95}
+\definecolor{mycyan}{cmyk}{.3,0,0,0}
+
+\lstset{ %
+language=Matlab,                % the language of the code
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                % will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+backgroundcolor=\color{bcol},   % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=shadowbox,                % adds a frame around the code
+rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+tabsize=2,                      % sets default tabsize to 2 spaces
+captionpos=t,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+title=\lstname,                     % show the filename of files included with \lstinputlisting;
+                                    % also try caption instead of title
+keywordstyle=\color{blue},          % keyword style
+commentstyle=\color{dkgreen},       % comment style
+stringstyle=\color{mauve},          % string literal style
+escapeinside=``,                    % if you want to add LaTeX within your code
+morekeywords={LONG64,LONGLONG,bool}                % if you want to add more keywords to the set
+}
+
+
+
+\usepackage{flushend, cuted} %
+
+\usepackage{indentfirst,latexsym,bm}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{pifont} 
+\usepackage{fontspec,xltxtra,xunicode}  
+\defaultfontfeatures{Mapping=tex-text}  
+
+\usepackage{algorithmic}
+\usepackage[noend, ruled, linesnumbered]{algorithm2e}
+\setromanfont{华文宋体} %设置中文字体  
+\XeTeXlinebreaklocale “zh”  
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt %文章内中文自动换行  
+  
+ \setlength{\columnsep}{3em}          %设置分栏间隔
+\setlength{\parindent}{2em}          %设置段首缩进量
+\renewcommand{\baselinestretch}{1.2} %重设行距     
+ \usepackage{graphicx}
+\usepackage{cite}
+\newcommand{\red}[1]{  \textcolor{red}  {#1}}   %红色\makeatletter
+\newcommand{\blue}[1]{ \textcolor{blue} {#1}}   %蓝色\def\@cite#1#2{\textsuperscript{[{#1\if@tempswa , #2\fi}]}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}   %绿色\makeatother
+
+
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+
+%%--------------------------------------------------
+%% 图片文件路径
+%%--------------------------------------------------
+\graphicspath{{Figures/}}
+
+
+% MATH -----------------------------------------------------------
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\vecm}{vec}
+\DeclareMathOperator{\vecs}{vecs}
+
+\newcommand{\mfloor}[1]{ \left\lfloor {#1} \right\rfloor }
+\newcommand{\mpair}[2]{ \left\langle {#1}, {#2} \right\rangle}
+
+
+\renewcommand{\bf}[1]{\mathbf{#1}}
+\renewcommand{\vec}[1]{\bm{#1}}    %向量， 黑斜体
+\newcommand{\mat}[1]{\bm{#1}}    %矩阵
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\me} {\mathrm{e}}
+\newcommand{\mi} {\mathrm{i}}
+\newcommand{\vei} {\mathrm{vec}}
+
+\newcommand{\vecmat}[1]{\vecm{\left( #1 \right)}}
+\newcommand{\vecsmat}[1]{\vecs{\left( #1 \right)}}
+\newcommand{\vecasym}[1]{[#1]_\times}   % antisymmetric matrix from a vector
+\newcommand{\id} {\mathbbm{1}}   % identity operator
+\newcommand{\fracode}[2]{\frac{\dif {#1}}{\dif {#2}}}         % ordinary differential operator
+\newcommand{\fracpde}[2]{\frac{\partial {#1}}{\partial {#2}}} % partial differential operator
+\newcommand{\fracpderow}[2]{\partial {#1}/\partial {#2}}
+\newcommand{\fracoderow}[2]{\dif {#1}/\dif {#2}}
+\newcommand{\fracpdemix}[3]{\frac{\partial^2 {#1}}{\partial {#2} \partial {#3}}}
+\newcommand{\lap}[2]{\frac{\partial^2 {#1}}{\partial {#2}^2}}
+\newcommand{\laprow}[2]{\partial^2 {#1}/\partial {#2}^2}
+\newcommand{\secode}[2]{\frac{\dif^2 {#1}}{\dif {#2}^2}}
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\absvec}[1]{\left| \bf{#1} \right|}
+\newcommand{\ket}[1]{|#1 \rangle}
+\newcommand{\bra}[1]{\langle #1 |}
+\newcommand{\braket}[2]{ \langle #1 | #2 \rangle}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+\newcommand{\normF}[1]{{\parallel #1 \parallel}_\textrm{F}}
+\newcommand{\trsp}[1]{{#1}^\textsf{T}}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\ginv}[1]{#1^+}    % Moore-Penrose (general) inverse
+\newcommand{\tinv}[1]{{#1}^{-\textsf{T}}}
+
+
+\newcommand{\ES}[3]{\mathbb{#1}^{{#2}\times {#3}}}               % Euclidean space
+\newcommand{\PS}[3]{\mathbb{#1}^{{#2}\times{#3}}}      % projective space
+% ----------------------------------------------------------------
+\newfontfamily{\H}{华文黑体}  
+\newfontfamily{\E}{Arial}  
+
+
+\newfontfamily{\TNR}{Times New Roman}  %设定新的字体快捷命令  
+\title{{\H Weekly Report of Research Work\\ }\quad {WR-ABS-TEMP-2015A-No.001}}
+\author{汤吉(Ji TANG)\\
+               Number: WR-ABS-TEMP-2015A,  E-mail: tangji08@hotmail.com \\
+        Date: 15/11/2015 - 22/11/2015}
+        \date{November 22, 2015}
+
+  
+ %%*************************************************
+%%  打印 标题, 作者, 日期等内容
+%%*************************************************
+\begin{document}  
+\maketitle
+%%*********************************************
+%% 设置页眉与页脚
+%%*********************************************
+\pagestyle{fancy}
+\fancyhead[LO,RE]{\leftmark} % clear all fields
+\fancyhead[RO,LE]{WR-ABS-TEMP-2015A-No.001-TJx}   %  请设置正确的个人文档编号
+
+
+
+\fancyfoot[LO,RE]{SIAE}
+\fancyfoot[RO,RE]{Ji Tang}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+
+%%*************************************************
+%% 显示内容目录
+%%*************************************************
+\tableofcontents 
+\newpage
+%%*************************************************
+%% 正文部分
+%%*************************************************
+\section{\H Work}
+This week, I have read the two version (in EN and CN) of the book "Machine Learning In Action" about the fundamental concepts of k-Nearest Neighbors method. And we have collected the basis information about "Machine Learning" and "Big Data", then have make a big list of them of 6 aspects "Journals","Person","Directions", "Open Source Software","Classic Review" and "Reference". Because these things are so difficult for us to search by using "Baidu", so we have studied how to get a VPS and Open a VPN, it's not really easy. And finally, I have rewrite my C language code about the Integral Method "Gauss-Legendre" refer to your code.
+\section{\H The basis concept of kNN}
+\subsection{\H Description}
+k-Nearest Neighbors (kNN) works like this: we have an existing set of example data, our training set. We have labels for all of this data-we know what class each piece of the data should fall into. When we are given a new piece of data without a label, we compare that new piece of data to the existing data, every piece of existing data. We then take the most similar pieces of data (the nearest neighbors) and look at their labels. We look at the top k most similar pieces of data from our known dataset, this is where the k comes from. (k is an integer and it's usually less than 20.)Lastly, we take a majority vote from the k most similar pieces of data, and the majority is the new class we assign to the data we were asked to classify.
+\subsection{\H General Approach}
+\begin{enumerate}
+	\item Collect:Any method.
+	\item Prepare:Numeric values are needed for a distance calculation.A structured data format is best.
+	\item Analyze:Any method.
+	\item Train:Does not apply to the kNN algorithm.
+	\item Test:Calculate the error rate.
+	\item Use:This application needs to get some input data and output structured numeric values.Next, the application runs the kNN algorithm on this input data and determines which class the input data should belong to. The application then takes some action on the calculated class.
+\end{enumerate}
+
+\section{\H The basis concept of BigData}
+Big data is a broad term for data sets so large or complex that traditional data processing applications are inadequate. Challenges include analysis, capture, data curation, search, sharing, storage, transfer, visualization, and information privacy. The term often refers simply to the use of predictive analytics or other certain advanced methods to extract value from data, and seldom to a particular size of data set. Accuracy in big data may lead to more confident decision making. And better decisions can mean greater operational efficiency, cost reduction and reduced risk.
+
+Analysis of data sets can find new correlations, to "spot business trends, prevent diseases, combat crime and so on." Scientists, business executives, practitioners of media, and advertising and governments alike regularly meet difficulties with large data sets in areas including Internet search, finance and business informatics. Scientists encounter limitations in e-Science work, including meteorology, genomics,connectomics, complex physics simulations,and biological and environmental research.
+\cite{wiki:xxx}
+
+\section{\H Set up VPN on VPS}
+At first, we have purchased a VPS with configuration of "10 GB SSD RAID-10 DISK Space, 256 RAM, 500 Transfer". And then it took us a little long time to understand how to open the VPN of PPTP service. But finally, we have succeed !
+
+\section{\H Gauss-Legendre}
+After the guidance of Pro. H.Y.Zhang, I have rewritten my C language code:
+\begin{lstlisting}
+	/*
+ ============================================================================
+ Name         : Intergral_Legendre.c
+ Author       : 汤吉 Tangji
+ Version      : 2.0
+ Copyright    : 2015 Ji Tang <tangji08@hotmail.com>
+ Description  : Gauss Legendre integral method function
+ Function defined: double Gauss_legendre()
+ Function usage:
+    1.You should input 4 parameters:double f(double),double a,double b,int n
+      Then the function will return a double result (the value of this integral)
+    2.Used by double Gauss_legendre()
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#include "Polynome_Legendre.h"
+
+double Gauss_legendre(double a, double b, int m, double f(double))
+{
+    double x, Root_x, Half_range, Average, sum = 0;
+    Half_range = (b-a) /2;
+    //Define the amplitude of a and b
+    Average = (a+b) /2;
+    //Define the half value between a and b
+    for ( int i = 1; i <= m; i++)
+    {
+	    x = cos(M_PI*(double)(i-0.25)/(double)(m+0.5));
+	    //To find the root by using the method of Newton
+	    if (x != Root_x){
+		    Root_x = x;
+		    x -= Poly(x,m) / DPoly(x,m);
+	        }
+	Root_x = DPoly(x,m);
+    sum+= f(Half_range*x+Average) * 2.0 / ( ( 1- x*x ) * Root_x * Root_x );
+    }
+    return sum*Half_range;
+}
+
+//Define the integral function "f = X^2"
+double f(double x){
+	return x*x;
+}
+
+int main(){
+	double result,a,b;
+	int p;
+	printf("You want to integral \"X^2\" from _ to _ by _ ranks?\n");
+	scanf("%lf %lf %d",&a,&b,&p);
+	result = Gauss_legendre(a,b,p,f);
+	printf("The integral is  %lf  by the method of Gauss Legendre\n",result);
+	printf("Do you want to continue?(Y/N)\n");
+	char C = ' ';
+	while((C<'a'|C>'z') & (C<'A'|C>'Z'))
+		{
+			C = getchar();
+		}
+		//Get a char until the user input a letter from "a" to "z" or "A" to "Z"
+		if(C == 'Y'|C == 'y'){
+			main();
+		}else{ return 0;}
+		//If the user choose "Y" or "y",repeat this program.Otherwise,the program is over!
+}
+\end{lstlisting}
+
+\begin{lstlisting}
+	/*
+ ============================================================================
+ Name         : Polynome_Legendre.h
+ Author       : 汤吉 Tangji
+ Version      : 2.0
+ Copyright    : 2015 Ji Tang <tangji08@hotmail.com>
+ Description  : Gauss Legendre integral method function
+ Function defined: 1.double Poly()
+                   2.double DPoly()
+ Function usage:
+        You can use this head file to obtain the polynome and the derivpolynome of Gauss-Legendre.
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+double Poly( double x, int n)
+{
+	double P0 = 1.0;    // for P0(x)
+	double P1 = x;       // for P1(x)
+	double Pn;
+    switch(n) {
+		case 0:Pn = P0;break;
+		case 1:Pn = P1;break;
+		default:
+			for(int i = 1; i < n; i++){
+				// iterating via the formula
+				Pn = ((2*i -1.0)*x*P1 - (i -1.0)*P0 )/i;
+				P0 = P1;   // Renew P0
+				P1 = Pn;   // Renew P1
+				}
+			break;
+    }
+	return Pn;
+}
+
+double DPoly( double x, int n)
+{
+	//Calculate the derivative of Lengdre Polynomial
+	return (double)n*(x*Poly(x,n)-Poly(x,n-1.0))/(x*x-1.0);
+}
+\end{lstlisting}
+
+Although there are some bugs, the next week I'll continue to debug them.
+
+But the most important thing is that I can conclude from your code that I should firstly make all the variances clearly, and try my best to let each function or formula distinct. For example, it's better for me to write the expression 
+\begin{lstlisting}
+x=cos(M\_PI*(i+0.75)/(m+0.25));
+\end{lstlisting}
+In this way
+\begin{lstlisting}
+x = cos( M\_PI * ( i + 0.75 ) / ( m + 0.25 ) );
+\end{lstlisting}
+
+ Which could make me feel more comfortable.
+
+ 
+
+%%****************************************
+%%  参考文献
+%%****************************************
+\bibliography{myreference}
+\bibliographystyle{plain}
+\end{document}  

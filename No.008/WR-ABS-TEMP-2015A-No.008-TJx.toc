@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}\H Work}{2}
+\contentsline {section}{\numberline {2}\H The Python Program}{2}
+\contentsline {subsection}{\numberline {2.1}\H Plot the file of the form ".txt"}{2}
+\contentsline {subsection}{\numberline {2.2}\H Plot the chart of the period you want}{6}
+\contentsline {subsection}{\numberline {2.3}\H The optimizing}{9}
+\contentsline {section}{\numberline {3}\H The Econophysices}{13}
+\contentsline {subsection}{\numberline {3.1}\H 对数收益率、随机游走、峰度}{13}
+\contentsline {subsection}{\numberline {3.2}\H Hurst exponent}{13}
+\contentsline {subsubsection}{\numberline {3.2.1}Definition}{14}
+\contentsline {subsubsection}{\numberline {3.2.2}Estimating the exponent}{14}
+\contentsline {subsubsection}{\numberline {3.2.3}Generalized exponent}{15}
+\contentsline {subsubsection}{\numberline {3.2.4}The code for calculating the Hurst Exponent}{17}
+\contentsline {subsubsection}{\numberline {3.2.5}The code for ploting the Hurst Exponent}{18}
+\contentsline {subsubsection}{\numberline {3.2.6}The result of the code}{20}
+\contentsline {subsection}{\numberline {3.3}\H 自更新向心布朗运动}{20}
+\contentsline {subsection}{\numberline {3.4}\H 自相关系数与互相关系数}{22}
