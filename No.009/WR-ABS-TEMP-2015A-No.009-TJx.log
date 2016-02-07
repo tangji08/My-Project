@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.12.20)  12 JAN 2016 00:47
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.12.20)  24 JAN 2016 16:47
 entering extended mode
-**WR-ABS-TEMP-2015A-No.008-TJx.tex
-("C:\Documents\My Project\No.008\WR-ABS-TEMP-2015A-No.008-TJx.tex"
+**WR-ABS-TEMP-2015A-No.009-TJx.tex
+("C:\Documents\My Project\No.009\WR-ABS-TEMP-2015A-No.009-TJx.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\base\article.cls
@@ -937,7 +937,7 @@ Requested font "å¾®è½¯é^^9b^^85é»^^91/BI/BI/ICU" at 10.0pt
 . * 'bold italic' with NFSS spec.:
 . <->"微软雅黑/BI/ICU:script=latn;language=DFLT;mapping=tex-text;"
 .................................................
-LaTeX Info: Redefining \H on input line 139.
+LaTeX Info: Redefining \H on input line 142.
 Requested font "Arial" at 10.0pt
  -> C:/WINDOWS/Fonts/arial.ttf
 Requested font "Arial/ICU" at 10.0pt
@@ -1037,28 +1037,28 @@ Requested font "Times New Roman/BI/BI/ICU" at 10.0pt
 . <->"Times New
 . Roman/BI/ICU:script=latn;language=DFLT;mapping=tex-text;+smcp;"
 .................................................
- ("C:\Documents\My Project\No.008\WR-ABS-TEMP-2015A-No.008-TJx.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 154.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 154.
+ ("C:\Documents\My Project\No.009\WR-ABS-TEMP-2015A-No.009-TJx.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 157.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 157.
 
 (C:\CTEX\MiKTeX\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    ... okay on input line 157.
 Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
 12.0pt
  -> C:/WINDOWS/Fonts/STSONG.TTF
@@ -1104,70 +1104,70 @@ Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at
 .................................................
 \symlegacymaths=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 154.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 154.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 154.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 154.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 154.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 154.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 154.
-LaTeX Font Info:    Redeclaring math accent \check on input line 154.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 154.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 154.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 154.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 154.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 157.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 157.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 157.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 157.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 157.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 157.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 157.
+LaTeX Font Info:    Redeclaring math accent \check on input line 157.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 157.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 157.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 157.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 157.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 154.
+(Font)              `operators' in the math version `normal' on input line 157.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> EU1/华文宋体(0)/m/n on input line 1
-54.
+57.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 154.
+(Font)              `operators' in the math version `bold' on input line 157.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU1/华文宋体(0)/m/n on input line 
-154.
+157.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  EU1/华文宋体(0)/m/n --> EU1/华文宋体(0)/m/n on 
-input line 154.
+input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  EU1/华文宋体(0)/m/n --> EU1/华文宋体(0)/m/n on 
-input line 154.
+input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> EU1/华文宋体(0)/m/it on input line
- 154.
+ 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> EU1/华文宋体(0)/bx/n on input line
- 154.
+ 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 154.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 154.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 157.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  EU1/华文宋体(0)/m/n --> EU1/华文宋体(0)/bx/n on
- input line 154.
+ input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
 (Font)                  EU1/华文宋体(0)/m/n --> EU1/华文宋体(0)/bx/n on
- input line 154.
+ input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> EU1/华文宋体(0)/bx/it on input li
-ne 154.
+ne 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 154.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 154.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 157.
 Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
 20.74pt
  -> C:/WINDOWS/Fonts/STSONG.TTF
@@ -1188,7 +1188,7 @@ Requested font "cmex10" at 14.4pt
  -> cmex10
 Requested font "cmex7" at 7.0pt
  -> cmex7
-LaTeX Font Info:    Try loading font information for U+lasy on input line 155.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 158.
 (C:\CTEX\MiKTeX\tex\latex\base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -1221,8 +1221,8 @@ Requested font "lasyb10" at 14.4pt
 Requested font "lasyb10" at 10.0pt
  -> lasyb10
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 155.
-LaTeX Font Info:    Try loading font information for U+msa on input line 155.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 158.
+LaTeX Font Info:    Try loading font information for U+msa on input line 158.
 
 (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
@@ -1233,7 +1233,7 @@ Requested font "msam10" at 10.0pt
  -> msam10
 Requested font "msam7" at 7.0pt
  -> msam7
-LaTeX Font Info:    Try loading font information for U+msb on input line 155.
+LaTeX Font Info:    Try loading font information for U+msb on input line 158.
 
 (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -1249,34 +1249,107 @@ Requested font "cmr12" at 14.4pt
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 160.
+less on input line 163.
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 161.
+less on input line 164.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 165.
+less on input line 168.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 166.
+less on input line 169.
 
 Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
 17.28pt
  -> C:/WINDOWS/Fonts/STSONG.TTF
 
 LaTeX Font Warning: Font shape `EU1/华文宋体(0)/bx/n' undefined
-(Font)              using `EU1/华文宋体(0)/m/n' instead on input line 175.
+(Font)              using `EU1/华文宋体(0)/m/n' instead on input line 178.
 
-("C:\Documents\My Project\No.008\WR-ABS-TEMP-2015A-No.008-TJx.toc"
+("C:\Documents\My Project\No.009\WR-ABS-TEMP-2015A-No.009-TJx.toc"
 Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
 12.0pt
  -> C:/WINDOWS/Fonts/STSONG.TTF
 Requested font "å¾®è½¯é^^9b^^85é»^^91/B/ICU:script=latn;language=DFLT;
 mapping=tex-text;" at 12.0pt
  -> C:/WINDOWS/Fonts/msyhbd.ttc
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;ma
+pping=tex-text;" at 12.0pt
+ -> C:/WINDOWS/Fonts/msyh.ttc
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
+8.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
+6.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+Requested font "cmmi12" at 12.0pt
+ -> cmmi12
+Requested font "cmmi8" at 8.0pt
+ -> cmmi8
+Requested font "cmmi6" at 6.0pt
+ -> cmmi6
+Requested font "cmsy10" at 12.0pt
+ -> cmsy10
+Requested font "cmsy8" at 8.0pt
+ -> cmsy8
+Requested font "cmsy6" at 6.0pt
+ -> cmsy6
+Requested font "cmex10" at 12.0pt
+ -> cmex10
+Requested font "cmex8" at 8.0pt
+ -> cmex8
+Requested font "cmex7" at 6.0pt
+ -> cmex7
+Requested font "lasy10" at 12.0pt
+ -> lasy10
+Requested font "lasy8" at 8.0pt
+ -> lasy8
+Requested font "lasy6" at 6.0pt
+ -> lasy6
+Requested font "cmbx12" at 12.0pt
+ -> cmbx12
+Requested font "cmbx8" at 8.0pt
+ -> cmbx8
+Requested font "cmbx6" at 6.0pt
+ -> cmbx6
+Requested font "cmmib10" at 12.0pt
+ -> cmmib10
+Requested font "cmmib8" at 8.0pt
+ -> cmmib8
+Requested font "cmmib6" at 6.0pt
+ -> cmmib6
+Requested font "cmbsy10" at 12.0pt
+ -> cmbsy10
+Requested font "cmbsy8" at 8.0pt
+ -> cmbsy8
+Requested font "cmbsy6" at 6.0pt
+ -> cmbsy6
+Requested font "lasyb10" at 12.0pt
+ -> lasyb10
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 5.
+Requested font "msam10" at 12.0pt
+ -> msam10
+Requested font "msam10" at 8.0pt
+ -> msam10
+Requested font "msam7" at 6.0pt
+ -> msam7
+Requested font "msbm10" at 12.0pt
+ -> msbm10
+Requested font "msbm10" at 8.0pt
+ -> msbm10
+Requested font "msbm7" at 6.0pt
+ -> msbm7
+Requested font "cmr8" at 8.0pt
+ -> cmr8
+Requested font "cmr6" at 6.0pt
+ -> cmr6
 )
 \tf@toc=\write3
  [1
@@ -1288,20 +1361,142 @@ Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at
 Requested font "å¾®è½¯é^^9b^^85é»^^91/B/ICU:script=latn;language=DFLT;
 mapping=tex-text;" at 17.28pt
  -> C:/WINDOWS/Fonts/msyhbd.ttc
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
+5.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+Requested font "cmex7" at 5.0pt
+ -> cmex7
+Requested font "lasy5" at 5.0pt
+ -> lasy5
+Requested font "cmbx5" at 5.0pt
+ -> cmbx5
+Requested font "cmmib5" at 5.0pt
+ -> cmmib5
+Requested font "cmbsy5" at 5.0pt
+ -> cmbsy5
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 199.
+Requested font "msam5" at 5.0pt
+ -> msam5
+Requested font "msbm5" at 5.0pt
+ -> msbm5
 
-No file WR-ABS-TEMP-2015A-No.008-TJx.bbl.
-Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;ma
-pping=tex-text;" at 12.0pt
- -> C:/WINDOWS/Fonts/msyh.ttc
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] ("C:\Documents\My Project\No.008\WR-ABS-TEMP-2015A-No.008-TJx.aux")
+[2] [3]
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
+14.4pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+Requested font "å¾®è½¯é^^9b^^85é»^^91/B/ICU:script=latn;language=DFLT;
+mapping=tex-text;" at 14.4pt
+ -> C:/WINDOWS/Fonts/msyhbd.ttc
+ [4]
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:" at 12.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:" at 12.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
+8.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+
+
+LaTeX Warning: Citation `wiki:001' on page 5 undefined on input line 302.
+
+[5]
+File: 1.jpg Graphic file (type QTm)
+ <use  "1.jpg" >
+File: 2.png Graphic file (type QTm)
+ <use  "2.png" > [6]
+File: 3.jpg Graphic file (type QTm)
+ <use  "3.jpg" >
+Overfull \hbox (2.84486pt too wide) in paragraph at lines 335--336
+[][] 
+ []
+
+[7]
+Overfull \vbox (3.45862pt too high) has occurred while \output is active []
+
+
+[8]
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:" at 12.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:" at 12.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+
+
+LaTeX Warning: Citation `wiki:002' on page 9 undefined on input line 347.
+
+[9]
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:" at 12.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:" at 12.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+
+
+LaTeX Warning: Citation `wiki:003' on page 10 undefined on input line 358.
+
+[10] [11] [12]
+File: 01.jpg Graphic file (type QTm)
+ <use  "01.jpg" >
+File: 02.jpg Graphic file (type QTm)
+ <use  "02.jpg" >
+Overfull \hbox (40.97986pt too wide) in paragraph at lines 477--479
+[][] [] 
+ []
+
+File: 03.jpg Graphic file (type QTm)
+<use  "03.jpg" >
+File: 04.jpg Graphic file (type QTm)
+ <use  "04.jpg" >
+Overfull \hbox (40.97986pt too wide) in paragraph at lines 480--482
+[][] [] 
+ []
+
+[13]
+File: 05.jpg Graphic file (type QTm)
+ <use  "05.jpg" >
+File: 06.jpg Graphic file (type QTm)
+ <use  "06.jpg" >
+Overfull \hbox (40.97986pt too wide) in paragraph at lines 483--485
+[][] [] 
+ []
+
+File: 07.jpg Graphic file (type QTm)
+<use  "07.jpg" >
+File: 08.jpg Graphic file (type QTm)
+ <use  "08.jpg" >
+Overfull \hbox (40.97986pt too wide) in paragraph at lines 486--488
+[][] [] 
+ []
+
+File: 09.jpg Graphic file (type QTm)
+<use  "09.jpg" >
+File: 10.jpg Graphic file (type QTm)
+ <use  "10.jpg" >
+Overfull \hbox (40.97986pt too wide) in paragraph at lines 489--491
+[][] [] 
+ []
+
+[14]
+File: 11.jpg Graphic file (type QTm)
+ <use  "11.jpg" >
+File: 12.jpg Graphic file (type QTm)
+ <use  "12.jpg" >
+Overfull \hbox (40.97986pt too wide) in paragraph at lines 492--494
+[][] [] 
+ []
+
+No file WR-ABS-TEMP-2015A-No.009-TJx.bbl.
+[15] ("C:\Documents\My Project\No.009\WR-ABS-TEMP-2015A-No.009-TJx.aux")
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
 
  )
 (\end occurred inside a group at level 1)
@@ -1309,12 +1504,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18359 strings out of 430478
- 357467 string characters out of 3191501
- 390574 words of memory out of 3000000
- 21237 multiletter control sequences out of 15000+200000
- 10758 words of font info for 72 fonts, out of 3000000 for 9000
+ 18781 strings out of 430478
+ 362106 string characters out of 3191501
+ 571584 words of memory out of 3000000
+ 21613 multiletter control sequences out of 15000+200000
+ 20005 words of font info for 114 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,11n,43p,812b,1563s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,12n,43p,1075b,3043s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on WR-ABS-TEMP-2015A-No.008-TJx.pdf (2 pages).
+Output written on WR-ABS-TEMP-2015A-No.009-TJx.pdf (15 pages).
