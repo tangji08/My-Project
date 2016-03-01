@@ -1,0 +1,3 @@
+\contentsline {section}{\numberline {1}\H Work}{2}
+\contentsline {section}{\numberline {2}\H Question}{2}
+\contentsline {section}{\numberline {3}\H The translated paper}{2}

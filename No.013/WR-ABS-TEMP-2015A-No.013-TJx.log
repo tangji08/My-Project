@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.12.20)  8 FEB 2016 01:25
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.12.20)  22 FEB 2016 01:06
 entering extended mode
-**WR-ABS-TEMP-2015A-No.011-TJx.tex
-("C:\Documents\My Project\No.011\WR-ABS-TEMP-2015A-No.011-TJx.tex"
+**WR-ABS-TEMP-2015A-No.013-TJx.tex
+("C:\Documents\My Project\No.013\WR-ABS-TEMP-2015A-No.013-TJx.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\base\article.cls
@@ -1037,7 +1037,7 @@ Requested font "Times New Roman/BI/BI/ICU" at 10.0pt
 . <->"Times New
 . Roman/BI/ICU:script=latn;language=DFLT;mapping=tex-text;+smcp;"
 .................................................
- ("C:\Documents\My Project\No.011\WR-ABS-TEMP-2015A-No.011-TJx.aux")
+ ("C:\Documents\My Project\No.013\WR-ABS-TEMP-2015A-No.013-TJx.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
 LaTeX Font Info:    ... okay on input line 157.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
@@ -1270,7 +1270,7 @@ Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at
 LaTeX Font Warning: Font shape `EU1/华文宋体(0)/bx/n' undefined
 (Font)              using `EU1/华文宋体(0)/m/n' instead on input line 178.
 
-("C:\Documents\My Project\No.011\WR-ABS-TEMP-2015A-No.011-TJx.toc"
+("C:\Documents\My Project\No.013\WR-ABS-TEMP-2015A-No.013-TJx.toc"
 Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
 12.0pt
  -> C:/WINDOWS/Fonts/STSONG.TTF
@@ -1279,17 +1279,235 @@ mapping=tex-text;" at 12.0pt
  -> C:/WINDOWS/Fonts/msyhbd.ttc
 )
 \tf@toc=\write3
+ [1
+
+]
 Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
 17.28pt
  -> C:/WINDOWS/Fonts/STSONG.TTF
 Requested font "å¾®è½¯é^^9b^^85é»^^91/B/ICU:script=latn;language=DFLT;
 mapping=tex-text;" at 17.28pt
  -> C:/WINDOWS/Fonts/msyhbd.ttc
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
+8.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
+6.0pt
+ -> C:/WINDOWS/Fonts/STSONG.TTF
+Requested font "cmmi12" at 12.0pt
+ -> cmmi12
+Requested font "cmmi8" at 8.0pt
+ -> cmmi8
+Requested font "cmmi6" at 6.0pt
+ -> cmmi6
+Requested font "cmsy10" at 12.0pt
+ -> cmsy10
+Requested font "cmsy8" at 8.0pt
+ -> cmsy8
+Requested font "cmsy6" at 6.0pt
+ -> cmsy6
+Requested font "cmex10" at 12.0pt
+ -> cmex10
+Requested font "cmex8" at 8.0pt
+ -> cmex8
+Requested font "cmex7" at 6.0pt
+ -> cmex7
+Requested font "lasy10" at 12.0pt
+ -> lasy10
+Requested font "lasy8" at 8.0pt
+ -> lasy8
+Requested font "lasy6" at 6.0pt
+ -> lasy6
+Requested font "cmbx12" at 12.0pt
+ -> cmbx12
+Requested font "cmbx8" at 8.0pt
+ -> cmbx8
+Requested font "cmbx6" at 6.0pt
+ -> cmbx6
+Requested font "cmmib10" at 12.0pt
+ -> cmmib10
+Requested font "cmmib8" at 8.0pt
+ -> cmmib8
+Requested font "cmmib6" at 6.0pt
+ -> cmmib6
+Requested font "cmbsy10" at 12.0pt
+ -> cmbsy10
+Requested font "cmbsy8" at 8.0pt
+ -> cmbsy8
+Requested font "cmbsy6" at 6.0pt
+ -> cmbsy6
+Requested font "lasyb10" at 12.0pt
+ -> lasyb10
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 193.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 193.
+Requested font "msam10" at 12.0pt
+ -> msam10
+Requested font "msam10" at 8.0pt
+ -> msam10
+Requested font "msam7" at 6.0pt
+ -> msam7
+Requested font "msbm10" at 12.0pt
+ -> msbm10
+Requested font "msbm10" at 8.0pt
+ -> msbm10
+Requested font "msbm7" at 6.0pt
+ -> msbm7
+Requested font "cmr8" at 8.0pt
+ -> cmr8
+Requested font "cmr6" at 6.0pt
+ -> cmr6
 
-No file WR-ABS-TEMP-2015A-No.011-TJx.bbl.
-[1
 
-] ("C:\Documents\My Project\No.011\WR-ABS-TEMP-2015A-No.011-TJx.aux")
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 194.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 194.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 194.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 194.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 194.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 194.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 194.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 194.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 194.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 203.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 206.
+
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;ma
+pping=tex-text;" at 12.0pt
+ -> C:/WINDOWS/Fonts/msyh.ttc
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] [3]
+File: 1.jpg Graphic file (type QTm)
+ <use  "1.jpg" >
+No file WR-ABS-TEMP-2015A-No.013-TJx.bbl.
+[4] ("C:\Documents\My Project\No.013\WR-ABS-TEMP-2015A-No.013-TJx.aux")
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1299,12 +1517,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18358 strings out of 430478
- 357391 string characters out of 3191501
- 390582 words of memory out of 3000000
- 21237 multiletter control sequences out of 15000+200000
- 10750 words of font info for 71 fonts, out of 3000000 for 9000
+ 18416 strings out of 430478
+ 358090 string characters out of 3191501
+ 402585 words of memory out of 3000000
+ 21273 multiletter control sequences out of 15000+200000
+ 18314 words of font info for 104 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,6n,43p,812b,1443s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,11n,43p,812b,1559s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on WR-ABS-TEMP-2015A-No.011-TJx.pdf (1 page).
+Output written on WR-ABS-TEMP-2015A-No.013-TJx.pdf (4 pages).

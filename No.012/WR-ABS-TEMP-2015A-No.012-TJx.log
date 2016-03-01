@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.12.20)  8 FEB 2016 01:25
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.12.20)  15 FEB 2016 00:38
 entering extended mode
-**WR-ABS-TEMP-2015A-No.011-TJx.tex
-("C:\Documents\My Project\No.011\WR-ABS-TEMP-2015A-No.011-TJx.tex"
+**WR-ABS-TEMP-2015A-No.012-TJx.tex
+("C:\Documents\My Project\No.012\WR-ABS-TEMP-2015A-No.012-TJx.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (C:\CTEX\MiKTeX\tex\latex\base\article.cls
@@ -1037,7 +1037,7 @@ Requested font "Times New Roman/BI/BI/ICU" at 10.0pt
 . <->"Times New
 . Roman/BI/ICU:script=latn;language=DFLT;mapping=tex-text;+smcp;"
 .................................................
- ("C:\Documents\My Project\No.011\WR-ABS-TEMP-2015A-No.011-TJx.aux")
+ ("C:\Documents\My Project\No.012\WR-ABS-TEMP-2015A-No.012-TJx.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
 LaTeX Font Info:    ... okay on input line 157.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
@@ -1270,7 +1270,7 @@ Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at
 LaTeX Font Warning: Font shape `EU1/华文宋体(0)/bx/n' undefined
 (Font)              using `EU1/华文宋体(0)/m/n' instead on input line 178.
 
-("C:\Documents\My Project\No.011\WR-ABS-TEMP-2015A-No.011-TJx.toc"
+("C:\Documents\My Project\No.012\WR-ABS-TEMP-2015A-No.012-TJx.toc"
 Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
 12.0pt
  -> C:/WINDOWS/Fonts/STSONG.TTF
@@ -1279,6 +1279,9 @@ mapping=tex-text;" at 12.0pt
  -> C:/WINDOWS/Fonts/msyhbd.ttc
 )
 \tf@toc=\write3
+ [1
+
+]
 Requested font "å^^8d^^8eæ^^96^^87å®^^8bä½^^93/ICU:mapping=tex-text;" at 
 17.28pt
  -> C:/WINDOWS/Fonts/STSONG.TTF
@@ -1286,10 +1289,17 @@ Requested font "å¾®è½¯é^^9b^^85é»^^91/B/ICU:script=latn;language=DFLT;
 mapping=tex-text;" at 17.28pt
  -> C:/WINDOWS/Fonts/msyhbd.ttc
 
-No file WR-ABS-TEMP-2015A-No.011-TJx.bbl.
-[1
+No file WR-ABS-TEMP-2015A-No.012-TJx.bbl.
+Requested font "å¾®è½¯é^^9b^^85é»^^91/ICU:script=latn;language=DFLT;ma
+pping=tex-text;" at 12.0pt
+ -> C:/WINDOWS/Fonts/msyh.ttc
 
-] ("C:\Documents\My Project\No.011\WR-ABS-TEMP-2015A-No.011-TJx.aux")
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] ("C:\Documents\My Project\No.012\WR-ABS-TEMP-2015A-No.012-TJx.aux")
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1299,12 +1309,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18358 strings out of 430478
- 357391 string characters out of 3191501
- 390582 words of memory out of 3000000
- 21237 multiletter control sequences out of 15000+200000
- 10750 words of font info for 71 fonts, out of 3000000 for 9000
+ 18360 strings out of 430478
+ 357472 string characters out of 3191501
+ 392585 words of memory out of 3000000
+ 21238 multiletter control sequences out of 15000+200000
+ 10758 words of font info for 72 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,6n,43p,812b,1443s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,11n,43p,812b,1563s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on WR-ABS-TEMP-2015A-No.011-TJx.pdf (1 page).
+Output written on WR-ABS-TEMP-2015A-No.012-TJx.pdf (2 pages).
