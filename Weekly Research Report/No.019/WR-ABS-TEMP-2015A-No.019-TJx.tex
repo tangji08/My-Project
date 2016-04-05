@@ -1,8 +1,11 @@
-%!TEX TS-program = xelatex  
+%!TEX TS-program = Xelatex  
 %!TEX encoding = UTF-8 Unicode  
   
   
-\documentclass[a4paper,12pt,oneside]{book}
+\documentclass[12pt]{article}  
+\usepackage{geometry}  
+\geometry{letterpaper}  
+  
 \usepackage{fancyhdr} 
 \usepackage{layout}
 \addtolength{\hoffset}{-1.0cm} \addtolength{\textwidth}{2cm}
@@ -22,9 +25,12 @@
 \definecolor{mygray}{gray}{.9}
 \definecolor{mypink}{rgb}{.99,.91,.95}
 \definecolor{mycyan}{cmyk}{.3,0,0,0}
+\usepackage{cite} 
+\newcommand{\ucite}[1]
+{\textsuperscript{\cite{#1}}}
 
 \lstset{ %
-language=Matlab,                % the language of the code
+language=python,                % the language of the code
 basicstyle=\footnotesize,       % the size of the fonts that are used for the code
 numbers=left,                   % where to put the line-numbers
 numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
@@ -133,16 +139,16 @@ morekeywords={LONG64,LONGLONG,bool}                % if you want to add more key
 \newcommand{\ES}[3]{\mathbb{#1}^{{#2}\times {#3}}}               % Euclidean space
 \newcommand{\PS}[3]{\mathbb{#1}^{{#2}\times{#3}}}      % projective space
 % ----------------------------------------------------------------
-\newfontfamily{\H}{华文黑体}  
+\newfontfamily{\H}{微软雅黑}  
 \newfontfamily{\E}{Arial}  
 
 
 \newfontfamily{\TNR}{Times New Roman}  %设定新的字体快捷命令  
-\title{{\H The basis study about Classifying with k-Nearest Neighbors}\quad {ABS-TEMP-2015A-No.002-TJx}}
+\title{{\H Weekly Report of Research Work\\ }\quad {WR-ABS-TEMP-2015A-No.019}}
 \author{汤吉(Ji TANG)\\
-               ID: ABS-TEMP-2015A,  E-mail: tangji08@hotmail.com \\
-        Date: 2015.11.16}
-        \date{November 16, 2015}
+               Number: WR-ABS-TEMP-2015A,  E-mail: tangji08@hotmail.com \\
+        Date: 28/3/2016 - 3/4/2016}
+        \date{April 3, 2016}
 
   
  %%*************************************************
@@ -155,17 +161,16 @@ morekeywords={LONG64,LONGLONG,bool}                % if you want to add more key
 %%*********************************************
 \pagestyle{fancy}
 \fancyhead[LO,RE]{\leftmark} % clear all fields
-\fancyhead[RO,LE]{ABS-TEMP-2015A-No.002-TJx}   %  请设置正确的个人文档编号
+\fancyhead[RO,LE]{WR-ABS-TEMP-2015A-No.019-TJx}   %  请设置正确的个人文档编号
 
 
 
 \fancyfoot[LO,RE]{SIAE}
-\fancyfoot[RO,LE]{中欧航空工程师学院}
+\fancyfoot[RO,RE]{Ji Tang}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
 
-\clearpage{\pagestyle{empty}\cleardoublepage}
 
 %%*************************************************
 %% 显示内容目录
@@ -175,51 +180,49 @@ morekeywords={LONG64,LONGLONG,bool}                % if you want to add more key
 %%*************************************************
 %% 正文部分
 %%*************************************************
-\clearpage{\pagestyle{empty}\cleardoublepage}
-\chapter{Person}
-\section{\H The important person in the field of machine learning}
-There are some important professors or person whom we may encounter frequently when doing researches.
+\section{\H Work}
+\begin{enumerate}
+	\item Recoding the Residual Learning network codes for training my data.
+	\item Screening out the data, making groups and setting labels for these data.
+	\item Having the first training.
+\end{enumerate}
 
-\noindent ~~1.Edoardo M. Airoldi, Harvard University, USA\\
-\indent\red{http://www.people.fas.harvard.edu/\~airoldi/}\\
+\section{\H Problem}
+\begin{enumerate}
+	\item The result of the first training for the first 50,000 data is about only 15\% accuracy.
+\end{enumerate}
 
-\noindent ~~2.~Peter Auer, University of Leoben, Austria\\
-\indent\red{http://portal.uni-freiburg.de/sdd/personen/auer/index.html/startseite}\\
+\section{\H Recoding the codes}
+I have successfully build my own neural network for training the data for International Gold Price. 
 
-\noindent ~~3.~Francis Bach, INRIA, France\\
-\indent\red{http://www.di.ens.fr/~fbach/}\\
+The inputs of the network for each epoch including 20 numbers in the type of float32. I have divided the 20 numbers into 2 lines. The first 10 numbers of the first line are adjacent 10 prices before the specific time. And the second 10 numbers of the second line are adjacent weekly average prices before this week.
 
-\noindent ~~4.~Andrew Bagnell, Carnegie Mellon University, USA\\
-\indent\red{http://www.ri.cmu.edu/person.html?person\_id=689}\\
+The output of the network is only one number ranged from 0 to 9. In order to get the number of each input group, firstly I calculated the Log-Rate(LR) for every data, following the formula:
+$$LR = \frac{ln(A)}{ln(B)}$$
 
-\noindent ~~5.~David Barber, University College London, UK\\
-\indent\red{http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.HomePage}\\
+A-The mean value of the next week price
 
-\noindent ~~6.~Mikhail Belkin, Ohio State University, USA\\
-\indent\red{http://soscholar.net/author?author\_id=42e8023a-8f4e-4ed8-908b-2bacea0034b4}\\
+B-The price now
 
-\noindent ~~7.~Yoshua Bengio, Université de Montréal, Canada\\
-\indent\red{http://www.iro.umontreal.ca/~bengioy/yoshua\_en/}\\
+And then I had divided all the values of Log-Rate into tens with the labels (0-9), so I have gotten the output value of each input group.
 
-\noindent ~~8.~Samy Bengio, Google Research, USA\\
-\indent\red{http://bengio.abracadoudou.com}\\
+\section{\H Preparing the data}
+This week, I began to use a new method of storing the data by using the 'pickle' model and pack the data into pkl file, which is more convenient!
 
-\noindent ~~9.~Jeff Bilmes, University of Washington, USA\\
-\indent\red{http://melodi.ee.washington.edu/~bilmes/pgs/index.html}\\
+\begin{center} 
+\includegraphics[width=2in]{1.jpg}
+\end{center}
 
-\noindent 10.~Karsten Borgwardt, MPI For Intelligent systems, Germany\\
-\indent\red{https://www.bsse.ethz.ch/mlcb?page=employee\&employee=Karsten}\\
+After all, I have gotten everything ready for training including 3,200,000 data that have the Hurst Value over 0.96.
 
-\noindent 11.~Lawrence Carin, Duke University, USA\\
-\indent\red{http://people.ee.duke.edu/~lcarin/}\\
+\section{\H The first training}
+For the first training, I just used the first 50,000 data and built a Residual Learning Network including 1,100,000 parameters and 40 layers. It took me 3 hours to train 300 epochs, but finally gotten only 15\% accuracy. It's too upset.
 
-\noindent 12.~Zhihua Zhang, Shanghai Jiao Tong University, China\\
-\indent\red{http://bcmi.sjtu.edu.cn/~zhzhang/}\\
+The next week, I decide to change the learning rate and weight. If it doesn't get better, I'll try to change the structure of the network or the strategy of setting labels.
 
 %%****************************************
 %%  参考文献
 %%****************************************
 \bibliography{myreference}
 \bibliographystyle{plain}
-
 \end{document}  

@@ -1,0 +1,279 @@
+%!TEX TS-program = Xelatex  
+%!TEX encoding = UTF-8 Unicode  
+  
+  
+\documentclass[12pt]{article}  
+\usepackage{geometry}  
+\geometry{letterpaper}  
+  
+\usepackage{fancyhdr} 
+\usepackage{layout}
+\addtolength{\hoffset}{-1.0cm} \addtolength{\textwidth}{2cm}
+\addtolength{\voffset}{-1.0cm} \addtolength{\textheight}{2cm}
+\usepackage[rgb]{xcolor}
+
+\usepackage{cite}
+\makeatletter
+\def\@cite#1#2{\textsuperscript{[{#1\if@tempswa , #2\fi}]}}
+\makeatother
+
+\usepackage{listings}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{bcol}{rgb}{0.85,0.85,0.85}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{mygray}{gray}{.9}
+\definecolor{mypink}{rgb}{.99,.91,.95}
+\definecolor{mycyan}{cmyk}{.3,0,0,0}
+\usepackage{cite} 
+\newcommand{\ucite}[1]
+{\textsuperscript{\cite{#1}}}
+
+\lstset{ %
+language=python,                % the language of the code
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                % will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+backgroundcolor=\color{bcol},   % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=shadowbox,                % adds a frame around the code
+rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+tabsize=2,                      % sets default tabsize to 2 spaces
+captionpos=t,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+title=\lstname,                     % show the filename of files included with \lstinputlisting;
+                                    % also try caption instead of title
+keywordstyle=\color{blue},          % keyword style
+commentstyle=\color{dkgreen},       % comment style
+stringstyle=\color{mauve},          % string literal style
+escapeinside=``,                    % if you want to add LaTeX within your code
+morekeywords={LONG64,LONGLONG,bool}                % if you want to add more keywords to the set
+}
+
+
+
+\usepackage{flushend, cuted} %
+
+\usepackage{indentfirst,latexsym,bm}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{pifont} 
+\usepackage{fontspec,xltxtra,xunicode}  
+\defaultfontfeatures{Mapping=tex-text}  
+
+\usepackage{algorithmic}
+\usepackage[noend, ruled, linesnumbered]{algorithm2e}
+\setromanfont{华文宋体} %设置中文字体  
+\XeTeXlinebreaklocale “zh”  
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt %文章内中文自动换行  
+  
+ \setlength{\columnsep}{3em}          %设置分栏间隔
+\setlength{\parindent}{2em}          %设置段首缩进量
+\renewcommand{\baselinestretch}{1.2} %重设行距     
+ \usepackage{graphicx}
+\usepackage{cite}
+\newcommand{\red}[1]{  \textcolor{red}  {#1}}   %红色\makeatletter
+\newcommand{\blue}[1]{ \textcolor{blue} {#1}}   %蓝色\def\@cite#1#2{\textsuperscript{[{#1\if@tempswa , #2\fi}]}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}   %绿色\makeatother
+
+
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+
+%%--------------------------------------------------
+%% 图片文件路径
+%%--------------------------------------------------
+\graphicspath{{Figures/}}
+
+
+% MATH -----------------------------------------------------------
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\vecm}{vec}
+\DeclareMathOperator{\vecs}{vecs}
+
+\newcommand{\mfloor}[1]{ \left\lfloor {#1} \right\rfloor }
+\newcommand{\mpair}[2]{ \left\langle {#1}, {#2} \right\rangle}
+
+
+\renewcommand{\bf}[1]{\mathbf{#1}}
+\renewcommand{\vec}[1]{\bm{#1}}    %向量， 黑斜体
+\newcommand{\mat}[1]{\bm{#1}}    %矩阵
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\me} {\mathrm{e}}
+\newcommand{\mi} {\mathrm{i}}
+\newcommand{\vei} {\mathrm{vec}}
+
+\newcommand{\vecmat}[1]{\vecm{\left( #1 \right)}}
+\newcommand{\vecsmat}[1]{\vecs{\left( #1 \right)}}
+\newcommand{\vecasym}[1]{[#1]_\times}   % antisymmetric matrix from a vector
+\newcommand{\id} {\mathbbm{1}}   % identity operator
+\newcommand{\fracode}[2]{\frac{\dif {#1}}{\dif {#2}}}         % ordinary differential operator
+\newcommand{\fracpde}[2]{\frac{\partial {#1}}{\partial {#2}}} % partial differential operator
+\newcommand{\fracpderow}[2]{\partial {#1}/\partial {#2}}
+\newcommand{\fracoderow}[2]{\dif {#1}/\dif {#2}}
+\newcommand{\fracpdemix}[3]{\frac{\partial^2 {#1}}{\partial {#2} \partial {#3}}}
+\newcommand{\lap}[2]{\frac{\partial^2 {#1}}{\partial {#2}^2}}
+\newcommand{\laprow}[2]{\partial^2 {#1}/\partial {#2}^2}
+\newcommand{\secode}[2]{\frac{\dif^2 {#1}}{\dif {#2}^2}}
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\absvec}[1]{\left| \bf{#1} \right|}
+\newcommand{\ket}[1]{|#1 \rangle}
+\newcommand{\bra}[1]{\langle #1 |}
+\newcommand{\braket}[2]{ \langle #1 | #2 \rangle}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+\newcommand{\normF}[1]{{\parallel #1 \parallel}_\textrm{F}}
+\newcommand{\trsp}[1]{{#1}^\textsf{T}}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\ginv}[1]{#1^+}    % Moore-Penrose (general) inverse
+\newcommand{\tinv}[1]{{#1}^{-\textsf{T}}}
+
+
+\newcommand{\ES}[3]{\mathbb{#1}^{{#2}\times {#3}}}               % Euclidean space
+\newcommand{\PS}[3]{\mathbb{#1}^{{#2}\times{#3}}}      % projective space
+% ----------------------------------------------------------------
+\newfontfamily{\H}{微软雅黑}  
+\newfontfamily{\E}{Arial}  
+
+
+\newfontfamily{\TNR}{Times New Roman}  %设定新的字体快捷命令  
+\title{{\H Weekly Report of Research Work\\ }\quad {WR-ABS-TEMP-2015A-No.016}}
+\author{汤吉(Ji TANG)\\
+               Number: WR-ABS-TEMP-2015A,  E-mail: tangji08@hotmail.com \\
+        Date: 7/3/2016 - 13/3/2016}
+        \date{March 13, 2016}
+
+  
+ %%*************************************************
+%%  打印 标题, 作者, 日期等内容
+%%*************************************************
+\begin{document}  
+\maketitle
+%%*********************************************
+%% 设置页眉与页脚
+%%*********************************************
+\pagestyle{fancy}
+\fancyhead[LO,RE]{\leftmark} % clear all fields
+\fancyhead[RO,LE]{WR-ABS-TEMP-2015A-No.016-TJx}   %  请设置正确的个人文档编号
+
+
+
+\fancyfoot[LO,RE]{SIAE}
+\fancyfoot[RO,RE]{Ji Tang}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+
+%%*************************************************
+%% 显示内容目录
+%%*************************************************
+\tableofcontents 
+\newpage
+%%*************************************************
+%% 正文部分
+%%*************************************************
+\section{\H Work}
+\begin{enumerate}
+	\item Relearning the Deep Learning completely
+	\item Reading the paper "Regression neural network for error correction in foreign exchange forecasting and trading"
+	\item Installing the python Deep Learning package "Lasagne"
+\end{enumerate}
+
+\section{\H Question}
+\begin{enumerate}
+	\item I have already read several papers, but it seems that every paper thinks its own neural network model is the best model for forecasting the Forex Price. So I'm not sure what kind of neural network model is better.
+	\item In each week, there are two days off that the gold price doesn't change. I don't know how to deal with them. If I regard the gold price in the two days off as a constance every week, it's obvious to produce the big errors.
+\end{enumerate}
+
+\section{\H Deep Learning Overview}
+Artificial Intelligence，也就是人工智能，就像长生不老和星际漫游一样，是人类最美好的梦想之一。虽然计算机技术已经取得了长足的进步，但是到目前为止，还没有一台电脑能产生“自我”的意识。是的，在人类和大量现成数据的帮助下，电脑可以表现的十分强大，但是离开了这两者，它甚至都不能分辨一个喵星人和一个汪星人。
+
+       图灵在 1950 年的论文里，提出图灵试验的设想，即，隔墙对话，你将不知道与你谈话的，是人还是电脑。这无疑给计算机，尤其是人工智能，预设了一个很高的期望值。但是半个世纪过去了，人工智能的进展，远远没有达到图灵试验的标准。这不仅让多年翘首以待的人们，心灰意冷，认为人工智能是忽悠，相关领域是“伪科学”。
+
+        但是自 2006 年以来，机器学习领域，取得了突破性的进展。图灵试验，至少不是那么可望而不可及了。至于技术手段，不仅仅依赖于云计算对大数据的并行处理能力，而且依赖于算法。这个算法就是，Deep Learning。借助于 Deep Learning 算法，人类终于找到了如何处理“抽象概念”这个亘古难题的方法。
+
+
+       2012年6月，《纽约时报》披露了Google Brain项目，吸引了公众的广泛关注。这个项目是由著名的斯坦福大学的机器学习教授Andrew Ng和在大规模计算机系统方面的世界顶尖专家JeffDean共同主导，用16000个CPU Core的并行计算平台训练一种称为“深度神经网络”（DNN，Deep Neural Networks）的机器学习模型（内部共有10亿个节点。这一网络自然是不能跟人类的神经网络相提并论的。要知道，人脑中可是有150多亿个神经元，互相连接的节点也就是突触数更是如银河沙数。曾经有人估算过，如果将一个人的大脑中所有神经细胞的轴突和树突依次连接起来，并拉成一根直线，可从地球连到月亮，再从月亮返回地球），在语音识别和图像识别等领域获得了巨大的成功。
+
+       项目负责人之一Andrew称：“我们没有像通常做的那样自己框定边界，而是直接把海量数据投放到算法中，让数据自己说话，系统会自动从数据中学习。”另外一名负责人Jeff则说：“我们在训练的时候从来不会告诉机器说：‘这是一只猫。’系统其实是自己发明或者领悟了“猫”的概念。”
+
+  
+
+       2012年11月，微软在中国天津的一次活动上公开演示了一个全自动的同声传译系统，讲演者用英文演讲，后台的计算机一气呵成自动完成语音识别、英中机器翻译和中文语音合成，效果非常流畅。据报道，后面支撑的关键技术也是DNN，或者深度学习（DL，DeepLearning）。
+
+       2013年1月，在百度年会上，创始人兼CEO李彦宏高调宣布要成立百度研究院，其中第一个成立的就是“深度学习研究所”（IDL，Institue of Deep Learning）。
+
+\section{\H About the paper I read}
+This week, I successfully get the rare paper "Regression neural network for error correction in foreign exchange forecasting and trading" by asking for help on Baidu. In this paper, it mentions a neural network model named General Regression Neural Network (GRNN).
+
+Just like all the papers in this field, it says that the model General Regression Neural Network (GRNN) which it used for forecasting is the best model, because it had the biggest accuracy or so on...
+
+Now, I just decide to use GRNN model firstly for my deep neural network. The next week, I will try to write the code for neural network to forecast the International Gold Price, and test it on the servers in the laboratory.
+
+\section{\H A example of package "Lasagne"}
+\begin{lstlisting}
+import lasagne
+import theano
+import theano.tensor as T
+
+# create Theano variables for input and target minibatch
+input_var = T.tensor4('X')
+target_var = T.ivector('y')
+
+# create a small convolutional neural network
+from lasagne.nonlinearities import leaky_rectify, softmax
+network = lasagne.layers.InputLayer((None, 3, 32, 32), input_var)
+network = lasagne.layers.Conv2DLayer(network, 64, (3, 3),
+                                     nonlinearity=leaky_rectify)
+network = lasagne.layers.Conv2DLayer(network, 32, (3, 3),
+                                     nonlinearity=leaky_rectify)
+network = lasagne.layers.Pool2DLayer(network, (3, 3), stride=2, mode='max')
+network = lasagne.layers.DenseLayer(lasagne.layers.dropout(network, 0.5),
+                                    128, nonlinearity=leaky_rectify,
+                                    W=lasagne.init.Orthogonal())
+network = lasagne.layers.DenseLayer(lasagne.layers.dropout(network, 0.5),
+                                    10, nonlinearity=softmax)
+
+# create loss function
+prediction = lasagne.layers.get_output(network)
+loss = lasagne.objectives.categorical_crossentropy(prediction, target_var)
+loss = loss.mean() + 1e-4 * lasagne.regularization.regularize_network_params(
+        network, lasagne.regularization.l2)
+
+# create parameter update expressions
+params = lasagne.layers.get_all_params(network, trainable=True)
+updates = lasagne.updates.nesterov_momentum(loss, params, learning_rate=0.01,
+                                            momentum=0.9)
+
+# compile training function that updates parameters and returns training loss
+train_fn = theano.function([input_var, target_var], loss, updates=updates)
+
+# train network (assuming you've got some training data in numpy arrays)
+for epoch in range(100):
+    loss = 0
+    for input_batch, target_batch in training_data:
+        loss += train_fn(input_batch, target_batch)
+    print("Epoch %d: Loss %g" % (epoch + 1, loss / len(training_data)))
+
+# use trained network for predictions
+test_prediction = lasagne.layers.get_output(network, deterministic=True)
+predict_fn = theano.function([input_var], T.argmax(test_prediction, axis=1))
+print("Predicted class for first test input: %r" % predict_fn(test_data[0]))
+\end{lstlisting}
+
+
+
+%%****************************************
+%%  参考文献
+%%****************************************
+\bibliography{myreference}
+\bibliographystyle{plain}
+\end{document}  

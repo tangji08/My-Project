@@ -1,4 +1,4 @@
-%!TEX TS-program = xelatex  
+%!TEX TS-program = Xelatex  
 %!TEX encoding = UTF-8 Unicode  
   
   
@@ -25,9 +25,12 @@
 \definecolor{mygray}{gray}{.9}
 \definecolor{mypink}{rgb}{.99,.91,.95}
 \definecolor{mycyan}{cmyk}{.3,0,0,0}
+\usepackage{cite} 
+\newcommand{\ucite}[1]
+{\textsuperscript{\cite{#1}}}
 
 \lstset{ %
-language=Matlab,                % the language of the code
+language=python,                % the language of the code
 basicstyle=\footnotesize,       % the size of the fonts that are used for the code
 numbers=left,                   % where to put the line-numbers
 numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
@@ -136,16 +139,16 @@ morekeywords={LONG64,LONGLONG,bool}                % if you want to add more key
 \newcommand{\ES}[3]{\mathbb{#1}^{{#2}\times {#3}}}               % Euclidean space
 \newcommand{\PS}[3]{\mathbb{#1}^{{#2}\times{#3}}}      % projective space
 % ----------------------------------------------------------------
-\newfontfamily{\H}{华文黑体}  
+\newfontfamily{\H}{微软雅黑}  
 \newfontfamily{\E}{Arial}  
 
 
 \newfontfamily{\TNR}{Times New Roman}  %设定新的字体快捷命令  
-\title{{\H The basis study about Classifying with k-Nearest Neighbors}\quad {ABS-TEMP-2015A-No.002-TJx}}
-\author{(Ji TANG)\\
-               Number: ABS-TEMP-2015A-No.002-TJx,  E-mail: tangji08@hotmail.com \\
-        Date: 2015.11.16}
-        \date{November 16, 2015}
+\title{{\H Weekly Report of Research Work\\ }\quad {WR-ABS-TEMP-2015A-No.017}}
+\author{汤吉(Ji TANG)\\
+               Number: WR-ABS-TEMP-2015A,  E-mail: tangji08@hotmail.com \\
+        Date: 14/3/2016 - 20/3/2016}
+        \date{March 20, 2016}
 
   
  %%*************************************************
@@ -157,8 +160,8 @@ morekeywords={LONG64,LONGLONG,bool}                % if you want to add more key
 %% 设置页眉与页脚
 %%*********************************************
 \pagestyle{fancy}
-\fancyhead{} % clear all fields
-\fancyhead[RO,LE]{ABS-TEMP-2015A-No.002-TJx}   %  请设置正确的个人文档编号
+\fancyhead[LO,RE]{\leftmark} % clear all fields
+\fancyhead[RO,LE]{WR-ABS-TEMP-2015A-No.017-TJx}   %  请设置正确的个人文档编号
 
 
 
@@ -177,18 +180,33 @@ morekeywords={LONG64,LONGLONG,bool}                % if you want to add more key
 %%*************************************************
 %% 正文部分
 %%*************************************************
+\section{\H Work}
+\begin{enumerate}
+	\item Reading a paper named "Deep Residual Learning for Image Recognition"
+	\item Studying about the Deep Residual Learning network
+	\item Downloading the codes for Residual Learning network
+	\item Setting and Installing GPU on the computer
+\end{enumerate}
 
-\section{\H The basis concept of kNN}
-\subsection{Description}
-k-Nearest Neighbors (kNN) works like this: we have an existing set of example data, our training set. We have labels for all of this data-we know what class each piece of the data should fall into. When we are given a new piece of data without a label, we compare that new piece of data to the existing data, every piece of existing data. We then take the most similar pieces of data (the nearest neighbors) and look at their labels. We look at the top k most similar pieces of data from our known dataset, this is where the k comes from. (k is an integer and it's usually less than 20.)Lastly, we take a majority vote from the k most similar pieces of data, and the majority is hte
-\section{\H Postscript}
-\subsection{About one key}
-I need to go to the laboratory tonight at 6:00pm, but the key was in his hand. So I need to ask him for the key. There are two students with only one key, which is too inconvenient. And Binghui Wang have two keys in his hand now, so maybe we could get one more key from him, which looks like more rational?
+\section{\H Problem}
+\begin{enumerate}
+	\item I have tried many times to running CUDA on Windows, but finally I gave up. Then I reinstall the Linux system for my computer with so many tools and softwares being installed.
+\end{enumerate}
 
-Thanks a lot, yours student Ji Tang.
+\section{\H Deep Residual Learning}
+Deep Residual Learning is the newest method for Deep Learning, and it could finally achieve hundreds of levels of networks - 5 times as the levels number as ago. This method was come up with by Microsoft in 2015, and these kinds of networks showed a very strong capacity for Image Recognition.
 
-Best regards and best wishes.
- 
+Now I decided to use this kind of network to forecast the International Gold Price.
+
+\section{\H The codes}
+I have successfully downloaded the codes for Deep Residual Learning Network. Because this kind of network need so much operand, it requires the GPU supporting. So this week, Wang Zihao and I took some time to install the GTX 950 on my computer.
+
+However, I have tried so many methods to run the codes by GPU on Windows but failed in the end. So I'm resetting the Linux system on the computer at present.
+
+\section{\H The Microsoft's Paper}
+\includegraphics[width=6.5in]{001.jpg}
+
+
 
 %%****************************************
 %%  参考文献
